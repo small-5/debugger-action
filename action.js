@@ -12,8 +12,7 @@ function run() {
     });
 
     child.on('close', (code) => {
-      console.log(`child process exited with code ${code}`);
-      process.exit(code);
+      process.exit(0);
     });
   }
   catch (error) {
